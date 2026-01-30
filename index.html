@@ -1,33 +1,44 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8" />
-    <title>DiceRoll</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Freckle+Face&family=Jaro:opsz@6..72&family=Libre+Baskerville&family=Merienda:wght@300..900&family=Modern+Antiqua&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Share+Tech+Mono&family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <div class="container">
-      <h1>Start playing</h1>
-      <h2>Refresh Me</h2>
-      
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Dice Roll – Two Players</title>
 
-      <div class="dice">
-        <p>Player 1</p>
-        <img class="img1" src="./images/dice1.png" />
-      </div>
+  <link rel="stylesheet" href="styles.css" />
+</head>
 
-      <div class="dice">
-        <p>Player 2</p>
-        <img class="img2" src="./images/dice1.png" />
-      </div>
-      <div><button onclick="refreshPage()">Refresh</button></div>
-      <a class="code" href="">👉<u>See code</u></a> 
+<body>
+  <div class="container">
+    <h1>Dice Game</h1>
+    <h2 id="result">Roll to start</h2>
+
+    <div class="scoreboard">
+      <p>Player 1 Wins: <span id="p1Wins">0</span></p>
+      <p>Player 2 Wins: <span id="p2Wins">0</span></p>
+      <p>Draws: <span id="draws">0</span></p>
+      <p>Win Streak: <span id="streak">None</span></p>
     </div>
-    
-    <footer>@Sayantan-B-Dev @Appbrewery</footer>
-    <script src="./script.js"></script>
-  </body>
+
+    <div class="dice">
+      <p>Player 1</p>
+      <img class="img1" src="./images/dice1.png" alt="dice" />
+      <button id="p1Btn">Roll</button>
+    </div>
+
+    <div class="dice">
+      <p>Player 2</p>
+      <img class="img2" src="./images/dice1.png" alt="dice" />
+      <button id="p2Btn">Roll</button>
+    </div>
+
+    <div class="controls">
+      <button id="nextRoundBtn">Next Round</button>
+      <button id="resetGameBtn">Reset Game</button>
+    </div>
+  </div>
+
+  <footer>@Sayantan-B-Dev</footer>
+
+  <script src="script.js"></script>
+</body>
 </html>
