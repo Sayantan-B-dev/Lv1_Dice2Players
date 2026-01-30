@@ -17,7 +17,7 @@ This project focuses on **state management, animations, clean UI design, and use
 ---
 
 ![](./images/sample.png)
-
+ 
 ---
 
 ## Features
